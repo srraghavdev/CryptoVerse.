@@ -48,12 +48,12 @@ function Favourites() {
   }
   // async getdata function which gets triggerred whenver currency gets chnaged
   return (
-    <div>
+    <div className="fav-container">
       <Header></Header>
       {isLoading ? (
         <Loader></Loader>
       ) : (
-        <div>
+        <div style={{flexGrow:'1'}}>
           <h1 style={{ textAlign: "center", color: "var(--blue)" }}>
             Your Favourites
           </h1>

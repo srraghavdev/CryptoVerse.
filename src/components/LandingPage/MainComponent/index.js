@@ -54,7 +54,7 @@ let MainComponent = () => {
           <RWebShare
             data={{
               text: "CryptoVerse made using React JS, React-Router and Firebase.",
-              url: "raghavdevcryotoverse.netlify.app",
+              url: "",
               title: "CryptoVerse.",
             }}
             onClick={() => console.log("shared successfully!")}
