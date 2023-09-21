@@ -7,8 +7,12 @@
 	
 
  1. Home Page
+	The Home page consists of a navbar with links to each page, currency picker , dark mode toggle and links to signup/login. Share button can be used for a platform specific share popup. There are several animations powered by Framer-Motion.
+```![](https://i.ibb.co/9wwMpFN/home.png)
+ 
+ 2. Dashboard Page
+	```![](https://i.ibb.co/dDJ2d04/dash.png)
 
-```![Home pagfgfgfggfge](https://ibb.co/bHHf6SP)
 
 # Getting Started with Create React App
 
