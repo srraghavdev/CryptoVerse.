@@ -1,0 +1,13 @@
+.backtotop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin: 1.5rem;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid var(--blue);
+  padding: 0.5rem;
+}

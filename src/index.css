@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* importing Inter font from google fonts */
+
+/* Setting root variables for colors to maintain contuniuty through out project */
+:root {
+  --white: #fff;
+  --black: #111;
+  --blue: #3a80e9;
+  --grey: #888;
+  --darkgrey: #1b1b1b;
+  --green: #61c96f;
+  --red: #f94141;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* setting styles for the body including font and theme  */
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+}
+
+/* custom selection css according to our CSS */
+::selection {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/* CSS for custom scroll bar  */
+/* actual scroll bar */
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* the progress or track of the scroll bar(entire length) */
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+/* handle to drag aka the draggable scrolling handle*/
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 3rem;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+.wrapper {
+  display: block;
+  width: 95%;
+  background-color: var(--darkgrey);
+  margin: 1.5rem auto;
+  border-radius: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+/* .wrapper >h2,p{
+    margin: 1rem 0rem !important;
+  } */
+.coin-days-flex {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem;
+  gap: 1rem;
+}
+.signuppage {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+.signupcont {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.terms-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.glossary-term {
+  width: 350px;
+  height: 250px;
+  padding: 1rem 1rem;
+  background-color: var(--darkgrey);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.heading {
+  text-align: center;
+}
+.definition {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.glossary-term:hover {
+  box-shadow: 0px 0px 10px var(--blue);
+  transition: all 0.3s;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0rem;
+}
+.indi-news {
+  display: flex;
+  background-color: var(--darkgrey);
+  width: 75vw;
+  border-radius: 0.75rem;
+}
+.news-image-img {
+  max-width: 200px;
+  border-radius: 0.75rem;
+}
+.news-body,
+.news-title {
+  padding: 0rem 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.indi-news:hover {
+  box-shadow: 0px 0px 10px var(--blue);
+}
+.logout {
+  gap: 10rem;
+}
+
+.news-body {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+@media screen and (max-width: 800px) {
+  .signuppage {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .glossary-term {
+    font-size: 0.9rem;
+    height: 250px;
+    width: 300px;
+  }
+  .definition {
+    margin-top: 3rem;
+  }
+  .glossary-desc {
+    padding: 1rem;
+  }
+  .news-image-img {
+    max-width: 150px;
+  }
+  .indi-news {
+    width: 92vw;
+    font-size: 80%;
+  }
+  .news-image {
+    height: 150px;
+  }
+  .logout {
+    gap: 5rem;
+  }
+  .news-body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .news-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .news-body,
+  .news-title {
+    padding: 0rem 0.3rem;
+  }
+  .nofav-mobile {
+    font-size: 90%;
+  }
+}
+.icon-chip-star {
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  color: var(--green);
+  font-size: 2.5rem !important;
+  padding: 0.35rem;
+  height: 2rem;
+  width: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+.chip-red-icon-star {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+.icon-chip-star:hover {
+  background-color: var(--green);
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+.chip-red-icon-star:hover {
+  background-color: var(--red);
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+.hypertext {
+  text-decoration: underline var(--white);
+}
+.hypertext:hover {
+  color: var(--blue);
+  transition: all 0.3s;
+  text-decoration: none;
+  font-size: 1.1rem;
+}

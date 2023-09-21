@@ -1,0 +1,130 @@
+.grid-container {
+  width: 300px;
+  height: 300px;
+  background-color: var(--darkgrey);
+  border-radius: 0.75rem;
+  border: 2px solid var(--darkgrey);
+}
+
+.grid-container:hover {
+  border-color: var(--green);
+  transition: all 0.3s;
+}
+.grid-red:hover {
+  border-color: var(--red) !important;
+  transition: all 0.3s;
+}
+.info-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem;
+}
+.coin-logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.coin-symbol {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+.coin-name {
+  color: var(--white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  opacity: 1;
+}
+.name-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.chip-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 1.5rem;
+}
+.price-chip {
+  border: 2px solid var(--green);
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--green);
+  min-width: 64px;
+}
+.chip-red {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+.price-chip:hover {
+  background-color: var(--green);
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+.chip-red:hover {
+  background-color: var(--red);
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+.icon-chip {
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  color: var(--green);
+  font-size: 2.5rem !important;
+  padding: 0.35rem;
+  height: 2rem;
+  width: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.chip-red-icon {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+.icon-chip:hover {
+  background-color: var(--green);
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+.chip-red-icon:hover {
+  background-color: var(--red);
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+.info-container {
+  margin: 1.5rem;
+}
+.info-container > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.total-volume {
+  color: var(--grey);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 1rem !important;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    align-items: center;
+    width: 285px;
+  }
+
+  .wrapper {
+    width: 85%;
+  }
+}
