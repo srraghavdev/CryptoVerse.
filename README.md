@@ -1,3 +1,15 @@
+# CryptoVerse.
+	CryptoVerse. is a web app aimed at providing a one stop shop for all crypto needs. It is 
+	built on top of React,React-Router,Firebase,Axios,ChartJs,Framer-Motion,MUI and many other libraries.
+	The app is completely responsive and fetches real-time data.
+	
+	The various pages of the app are discussed below with appropiate screenshots:
+	
+
+ 1. Home Page
+
+![Home pagfgfgfggfge](https://ibb.co/bHHf6SP)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
