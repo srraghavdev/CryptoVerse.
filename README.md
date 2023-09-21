@@ -6,12 +6,19 @@
 	The various pages of the app are discussed below with appropiate screenshots:
 	
 
- 1. Home Page
+  Home Page: 
+  	<br>
 	The Home page consists of a navbar with links to each page, currency picker , dark mode toggle and links to signup/login. Share button can be used for a platform specific share popup. There are several animations powered by Framer-Motion.
-```![](https://i.ibb.co/9wwMpFN/home.png)
- 
- 2. Dashboard Page
-	```![](https://i.ibb.co/dDJ2d04/dash.png)
+ 	<br><br>
+	 ![home](https://github.com/srraghavdev/CryptoVerse./assets/15061360/6efca28b-0eee-403c-b4cd-33134319c16c)
+
+	 
+
+ Dashboard Page :
+	<br>
+ 	The page has two views , Grid and List with each crpyto currency depicted as a card with current price in the selected currency , percentage change in the last 24hrs, total market volume and cap. The page also has front-end based pagination.
+  	<br><br>
+	![dash](https://github.com/srraghavdev/CryptoVerse./assets/15061360/28f98a9d-1b51-4e22-9695-a92da1dd16f3)
 
 
 # Getting Started with Create React App
